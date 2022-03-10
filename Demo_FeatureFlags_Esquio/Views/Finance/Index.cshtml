@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Finance";
+}
+
+<h1>Features of Finance Module will be here soon!!!</h1>
+<feature Exclude="@FeatureFlags.FinanceModule_PrivateData" >
+    <span>La funcionalidad PrivateData está desactivada</span>
+</feature>
+<feature include="@FeatureFlags.FinanceModule_PrivateData" >
+    <span>La funcionalidad PrivateData está ACTIVADA, ENJOY IT</span>
+</feature>
+<a class="btn btn-primary" asp-area="" asp-controller="Finance" asp-action="PrivateData">PrivateData</a>
+
+@*FALTA PONER UN PAGINA DEFAULT CUANDO HALLA UN NOT FOUND*@
